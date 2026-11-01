@@ -68,3 +68,9 @@ Use [bountyhunter-os](https://github.com/elon00/bountyhunter-os) for repository-
 - A formatted hash never authorizes a payment. The x402 boundary returns an unconfigured status until a genuine verification and settlement backend is integrated. Settlement execution raises instead of pretending a local hash is a ledger transaction; the separate simulation uses bounded integer base units.
 
 The previous tests incorrectly accepted fabricated proofs and successful-looking local hashes. The replacement suite checks actual cryptographic results, tampering/wrong-key rejection, simulation bounds and fail-closed behavior. A green component suite is not an application deployment or 100/100 production/market certification. Token contracts, wallets/QR, actual x402 settlement, operational recovery and source-matched testnet workflows remain pending.
+
+## Wallet-connected test-token transfer (Sepolia prototype)
+
+Run `npm ci --ignore-scripts`, `npm test`, then `npm run start:wallet`. Open http://127.0.0.1:4173 in a browser with an EIP-1193 wallet. See `docs/SEPOLIA_ACCEPTANCE.md` for the supported scope and live acceptance steps. No new wallet dependency, token deployment, mainnet path or hosted signer is introduced.
+
+The flow uses an existing standard ERC-20 token on Sepolia. You must independently verify the public test-token contract and acquire test ETH and test tokens. No token address is invented or preselected. Only explicit wallet approval can submit a transaction. Live testnet evidence and deployment-source matching remain pending.

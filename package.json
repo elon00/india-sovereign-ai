@@ -3,9 +3,11 @@
   "version": "0.2.0",
   "description": "India-themed cryptocurrency application prototype with off-chain PQC and bounded local simulation",
   "scripts": {
-    "test": "node --test tests/pqc-vectors.test.mjs && python -B -m unittest discover -s tests -p \"*_test.py\"",
+    "test": "node --test tests/pqc-vectors.test.mjs tests/wallet-transfer.test.mjs && python -B -m unittest discover -s tests -p \"*_test.py\"",
     "test:python": "python -B -m unittest discover -s tests -p \"*_test.py\"",
-    "reality-check": "npm test"
+    "reality-check": "npm test",
+    "test:wallet": "node --test tests/wallet-transfer.test.mjs",
+    "start:wallet": "node scripts/serve-wallet.mjs"
   },
   "keywords": [
     "web3",

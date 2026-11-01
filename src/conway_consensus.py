@@ -1,9 +1,11 @@
 """
-Conway Automaton (B3/S23) Consensus Engine
-Maintains decentralized liveness consensus and peer-node health across sovereign nodes.
+Conway B3/S23 local simulation with toroidal boundaries.
+The historical class name does not imply blockchain consensus or peer health.
 """
 class ConwayConsensusGrid:
     def __init__(self, width: int = 8, height: int = 8):
+        if type(width) is not int or type(height) is not int or not 4 <= width <= 256 or not 4 <= height <= 256:
+            raise ValueError("Grid dimensions must be integers from 4 to 256")
         self.width = width
         self.height = height
         # Seed with a standard stable blinker / glider

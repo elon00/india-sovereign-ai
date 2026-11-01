@@ -44,10 +44,12 @@ PQC features require genuine reviewed algorithms and published-vector/negative t
 
 ## Development
 
-Review the repository's actual package manifests, dependencies and CI configuration before running its code. For the Python prototype suite, where present:
+Requires Python 3.10+, Node.js 22+ and the locked npm dependency. Install without lifecycle scripts and run the complete component suite:
 
 ```sh
-python -m unittest discover -s tests -p "*_test.py"
+npm ci --ignore-scripts
+npm test
+npm audit --audit-level=high
 ```
 
 Test output must describe the checks actually executed. A perfect readiness score is earned through current evidence.
@@ -55,3 +57,14 @@ Test output must describe the checks actually executed. A perfect readiness scor
 ## Portfolio coordination
 
 Use [bountyhunter-os](https://github.com/elon00/bountyhunter-os) for repository-specific repair profiles, source-bound test evidence and release blocker tracking. Keep this product's source, token configuration and deployment history in this repository.
+
+## Implemented component scope
+
+- The existing bounded Conway simulation is retained and checked against real patterns. It is not blockchain consensus.
+- Off-chain ML-KEM-768 key generation/encapsulation/decapsulation and ML-DSA-65 signing/verification use exactly @noble/post-quantum 0.7.1 through a local stdio bridge. This reuses the cryptographic implementation instead of inventing primitives.
+- Two published NIST ACVP key-generation vectors are preserved with immutable upstream URLs, test IDs and full-source hashes. They validate the selected key-generation cases, not every cryptographic operation or a FIPS-validated module.
+- Keys are ephemeral and memory-only. Private material travels only over captured local process pipes, never argv, logs or a network API. This is not production custody; Python/JavaScript may retain copies despite best-effort buffer clearing. Do not use this prototype for production keys or blockchain signing. Shared secrets must stay with the trusted caller; no peer authentication or key-confirmation protocol is implemented.
+- Identifier methods produce local test identifiers, not government-issued DIDs, Pedersen commitments or zero-knowledge credentials. Do not use real personal identifiers.
+- A formatted hash never authorizes a payment. The x402 boundary returns an unconfigured status until a genuine verification and settlement backend is integrated. Settlement execution raises instead of pretending a local hash is a ledger transaction; the separate simulation uses bounded integer base units.
+
+The previous tests incorrectly accepted fabricated proofs and successful-looking local hashes. The replacement suite checks actual cryptographic results, tampering/wrong-key rejection, simulation bounds and fail-closed behavior. A green component suite is not an application deployment or 100/100 production/market certification. Token contracts, wallets/QR, actual x402 settlement, operational recovery and source-matched testnet workflows remain pending.

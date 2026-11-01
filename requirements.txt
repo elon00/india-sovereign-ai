@@ -1,3 +1,2 @@
-pydantic>=2.0.0
-cryptography>=41.0.0
-requests>=2.31.0
+# Python modules use the standard library.
+# Cryptography is supplied by the exact Node dependency in package-lock.json; run npm ci.

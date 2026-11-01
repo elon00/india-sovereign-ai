@@ -1,0 +1,11 @@
+node_modules/
+__pycache__/
+*.pyc
+.venv/
+.env
+.env.*
+!.env.example
+.qmoosa/
+coverage/
+.coverage
+.technical-guard/

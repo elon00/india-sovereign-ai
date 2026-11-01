@@ -57,7 +57,7 @@ jobs:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
         with:
           repository: elon00/qmoosa-1000
-          ref: 76c7e658bb60f709eb9e60f120bf092b92ac719f
+          ref: 45d0a9f4ddf2110cbb3a826fd4e89583b1a8c9e5
           path: .technical-guard
           persist-credentials: false
       - run: python .technical-guard/tools/security_guard.py install

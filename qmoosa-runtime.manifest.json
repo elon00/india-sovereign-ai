@@ -1,0 +1,22 @@
+{
+  "reference": "elon00/QARBI",
+  "referenceCommit": "bbedd84d8b041f09617d118a5b8b8e65a7a4e1bb",
+  "sourceUnchanged": true,
+  "implementation": "New chain-independent Python components inspired by reference architecture; not a literal source port",
+  "version": "0.1.0",
+  "files": {
+    "qmoosa_runtime/ai.py": "eed559b476dc8c0b0d97d34da5d755c477888bd7bb2f93df278dfd72eb6ca258",
+    "qmoosa_runtime/chain.py": "0d51cf5f4cddeeda78ff83f3325e2fa6b10a2100735570babedc82c0e809afc8",
+    "qmoosa_runtime/deployment.py": "3b3cf06a78e61a85aa128a5afc9d98b0a356c3e6910a85c9f3362049d6b4096b",
+    "qmoosa_runtime/quantum.py": "e6e4345ce131b5b312fea6833766d8b064705a699d17132fabe8afba131d7db8",
+    "qmoosa_runtime/__init__.py": "2a7e40521f29e69a3827e68466d1219c9e4cdefb1fe0c80a15f96b7f5f94a5e8",
+    "qmoosa_runtime/__main__.py": "fbee3867656ade7899b49322d19995ca96fade3e792fdf0a2d2dea41fd470a27",
+    "tests/test_shared_deployment.py": "8edd504b85016426df540a369db21edbaeff4a4b59f7ccd3fb4f4100d85d1add",
+    "tests/test_shared_runtime.py": "da9bacee027f32da21336aec0a74c75ce71b4ea2c7dd19ebce70278701dc7f86",
+    "tests/test_shared_transport.py": "6d6478156193d0c40ee4ca53a0f661de4610df003b1e793210d1d83c52742f4d",
+    "docs/SHARED_TECHNOLOGIES.md": "7c30a6618caad11142dd748356561b8433a4ccdfb334e72980ebea3b3e1f9ef5",
+    ".github/workflows/shared-technologies.yml": "3a86a2db89b83054b5dc4e5b943d134842a4292536428dc53deab262e20343e2"
+  },
+  "liveIntegrationsVerified": false,
+  "deployments": []
+}

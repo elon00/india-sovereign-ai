@@ -1,0 +1,119 @@
+{
+  "engine": "REA_Reverse_Engineer_Anything",
+  "status": "STRUCTURE_RECONSTRUCTED",
+  "analyzed_files": 37,
+  "manifest": {
+    "package-lock.json": {
+      "bytes": 2346
+    },
+    "package.json": {
+      "bytes": 941
+    },
+    "qmoosa-runtime.manifest.json": {
+      "bytes": 1511
+    },
+    "README.md": {
+      "bytes": 6365
+    },
+    "requirements.txt": {
+      "bytes": 135
+    },
+    "docs\\SEPOLIA_ACCEPTANCE.md": {
+      "bytes": 3872
+    },
+    "docs\\SHARED_TECHNOLOGIES.md": {
+      "bytes": 4548
+    },
+    "qmoosa_runtime\\ai.py": {
+      "bytes": 3632
+    },
+    "qmoosa_runtime\\chain.py": {
+      "bytes": 6738
+    },
+    "qmoosa_runtime\\deployment.py": {
+      "bytes": 1334
+    },
+    "qmoosa_runtime\\quantum.py": {
+      "bytes": 974
+    },
+    "qmoosa_runtime\\__init__.py": {
+      "bytes": 100
+    },
+    "qmoosa_runtime\\__main__.py": {
+      "bytes": 2497
+    },
+    "scripts\\rea_inspector.py": {
+      "bytes": 1485
+    },
+    "scripts\\rsi_engine.py": {
+      "bytes": 2039
+    },
+    "scripts\\serve-wallet.mjs": {
+      "bytes": 1317
+    },
+    "src\\conway_consensus.py": {
+      "bytes": 1854
+    },
+    "src\\pqc_backend.mjs": {
+      "bytes": 2457
+    },
+    "src\\pqc_layer.py": {
+      "bytes": 5012
+    },
+    "src\\sovereign_core.py": {
+      "bytes": 2480
+    },
+    "src\\x402_telemetry.py": {
+      "bytes": 693
+    },
+    "src\\__init__.py": {
+      "bytes": 30
+    },
+    "tests\\pqc-vectors.test.mjs": {
+      "bytes": 1390
+    },
+    "tests\\reality_check_harness.py": {
+      "bytes": 1250
+    },
+    "tests\\reality_check_test.py": {
+      "bytes": 7866
+    },
+    "tests\\test_shared_deployment.py": {
+      "bytes": 1060
+    },
+    "tests\\test_shared_runtime.py": {
+      "bytes": 6315
+    },
+    "tests\\test_shared_transport.py": {
+      "bytes": 1580
+    },
+    "tests\\wallet-transfer.test.mjs": {
+      "bytes": 8083
+    },
+    "tests\\__init__.py": {
+      "bytes": 32
+    },
+    "web\\app.mjs": {
+      "bytes": 2774
+    },
+    "web\\index.html": {
+      "bytes": 2183
+    },
+    "web\\transfer.mjs": {
+      "bytes": 8309
+    },
+    ".github\\workflows\\codeql-reality-check.yml": {
+      "bytes": 2199
+    },
+    ".github\\workflows\\qmoosa-rsi-rea-sync.yml": {
+      "bytes": 531
+    },
+    ".github\\workflows\\shared-technologies.yml": {
+      "bytes": 660
+    },
+    "tests\\vectors\\nist-keygen.json": {
+      "bytes": 21403
+    }
+  },
+  "timestamp": 1794226236
+}
